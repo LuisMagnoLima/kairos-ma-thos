@@ -1,0 +1,2 @@
+Este é um documento de teste para o projeto Kairos MA-thos.
+O sistema deve resumir este conteúdo usando inteligência artificial.

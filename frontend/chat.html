@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Chat com Documento | Kairos MA-thos</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+
+<body class="app-bg">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-symbol">K</div>
+      <div>
+        <h1>Kairos MA-thos</h1>
+        <p>Leitura inteligente</p>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="upload.html">Analisar documento</a>
+      <a href="chat.html" class="active">Chat com documento</a>
+      <a href="historico.html">Histórico</a>
+      <a href="leitura.html">Leitura completa</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <p>Faça perguntas diretas sobre o último documento analisado.</p>
+    </div>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      <div>
+        <span class="eyebrow">Consulta inteligente</span>
+        <h2>Chat com o documento</h2>
+      </div>
+
+      <a href="upload.html" class="btn-outline-custom">Enviar novo documento</a>
+    </header>
+
+    <section class="panel result-panel">
+      <div class="panel-header">
+        <div>
+          <span class="eyebrow">Perguntas e respostas</span>
+          <h3>Converse com o conteúdo</h3>
+        </div>
+      </div>
+        <h4 id="nomeDocChat" style="margin-bottom: 15px;"></h4>
+      <div id="chatBox" class="chat-box">
+        <div class="message ai-message">
+          Envie uma pergunta sobre o último documento analisado.
+        </div>
+      </div>
+
+      <form id="chatForm" class="chat-form">
+        <input
+          type="text"
+          id="pergunta"
+          class="chat-input"
+          placeholder="Ex: Qual é a ideia principal do documento?"
+          required
+        />
+
+        <button type="submit" class="chat-button">
+          Perguntar
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/chat.js"></script>
+  <script>
+  const nome = localStorage.getItem("ultimoArquivo");
+
+  document.getElementById("nomeDocChat").innerText =
+    nome ? "Documento: " + nome : "Nenhum documento carregado";
+</script>
+</body>
+</html>
