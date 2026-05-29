@@ -51,11 +51,14 @@ O projeto busca unir tecnologia, acessibilidade e apoio acadêmico através de u
 - python -m venv venv
 # Ativar ambiente virtual
 - venv\Scripts\activate
-
 ## 4️⃣ Instale as dependências
 - pip install -r requirements.txt
 ## 5️⃣ Inicie o servidor
 - uvicorn main:app --reload
+
+# 🖥️ Front-end
+## 1️⃣ Ligue a porta
+- python -m http.server 5500 
 # 📂 Estrutura do Projeto
 
 ```bash
