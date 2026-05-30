@@ -45,6 +45,7 @@ O projeto busca unir tecnologia, acessibilidade e apoio acadêmico através de u
 
 ## 2️⃣ Entre na pasta
 - cd kairos-ma-thos
+- cd backend
 
 # 🖥️ Back-end
 ## 3️⃣ Crie o ambiente virtual
