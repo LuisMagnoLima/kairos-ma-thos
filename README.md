@@ -40,7 +40,7 @@ O projeto busca unir tecnologia, acessibilidade e apoio acadêmico através de u
 ---
 
 # ⚙️ Instalação
-## 1️⃣ Clone o repositório
+## 1️⃣ Clone o repositório do github
 - git clone https://github.com/LuisMagnoLima/kairos-ma-thos.git
 
 ## 2️⃣ Entre na pasta pelo terminal do Vscode
